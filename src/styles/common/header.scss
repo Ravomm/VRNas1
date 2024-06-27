@@ -1,0 +1,478 @@
+
+/* ---------- **********  HEADER  ********** ---------- */
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.header__blur {
+    background-color: hsla(240, 15%, 17%, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+.header--nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    transition: padding 0.3s linear;
+
+    @media (min-width: 430px) {
+        padding: 25px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 31px 40px;
+    }
+
+    @media (min-width: 1280px) {
+        margin: 0 auto;
+        padding: 31px 40px;
+        width: 1280px;
+    }
+}
+/* --- *** класс для изменения фона меню *** --- */
+.header--nav__blur {
+    padding: 15px 16px;
+
+    @media (min-width: 430px) {
+        padding: 15px 25px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 15px 40px;
+    }
+
+    @media (min-width: 1280px) {
+        padding: 15px 40px;
+    }
+}
+/**/
+
+
+
+
+.header--img__LOGO {
+    position: relative;
+    z-index: 3;
+    margin-top: 6px;
+    width: 101px;
+}
+
+
+
+
+.header--div__BACK {
+    position: absolute;
+    top: 0;
+    left: -130vw;
+    z-index: 2;
+    width: 100vw;
+    height: 76px;
+    background-color: hsl(240, 15%, 17%);
+    transition: left 0.6s;
+
+    @media (min-width: 430px) {
+        height: 94px;
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+.header__scroll {
+    height: 74px;
+}
+/* --- *** класс для открытия заднего фона шапки
+мобильного меню *** --- */
+.header__backopen {
+    left: 0;
+}
+/**/
+
+
+
+
+.header--ul {
+    padding: 90px 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -130%;
+    z-index: 1;
+    width: 100vw;
+    background-color: hsla(240, 15%, 17%, 0.95);
+    list-style-type: none;
+    transition: left 0.6s;
+    
+    @media (min-width: 768px) {
+        padding: 0;
+        flex-direction: row;
+        gap: 3.5vw;
+        position: static;
+        width: auto;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    @media (min-width: 1280px) {
+        gap: 50px;
+    }
+}
+/* --- *** класс для появления мобильного меню *** --- */
+.header__open {
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+
+    @media (min-width: 768px) {
+        height: auto;
+    }
+}
+/**/
+
+
+
+
+.header--li {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+
+
+
+.header--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.header--a__MENU {
+    font-weight: 300;
+    font-size: 21px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    transition: color 0.2s;
+    
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media (any-hover: hover) {
+    .header--a__MENU:hover {
+        filter: drop-shadow(0 0 hsl(0, 0%, 100%));
+    }
+    .header--a__MENU:active {
+        filter: drop-shadow(0 0 hsl(0, 0%, 40%));
+    }
+}
+@media (any-hover: none) {
+    .header--a__MENU:active {
+        filter: drop-shadow(0 0 hsl(0, 0%, 100%));
+    }
+}
+
+
+
+
+
+
+.header--img__VECT {
+    box-sizing: content-box;
+    display: block;
+    margin: 2px 0 0;
+    padding: 7px;
+    width: 14px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+
+    @media (min-width: 768px) {
+        margin: 3px 0 0 3px;
+        width: 9px;
+    }
+
+    @media (min-width: 950px) {
+        margin: 2px 0 0 5px;
+        width: 10px;
+    }
+}
+@media (any-hover: hover) {
+    .header--img__VECT:hover {
+        filter: drop-shadow(0 0 hsl(0, 0%, 100%));
+    }
+    .header--img__VECT:active {
+        filter: drop-shadow(0 0 hsl(0, 0%, 40%));
+    }
+}
+@media (any-hover: none) {
+    .header--img__VECT:active {
+        filter: drop-shadow(0 0 hsl(0, 0%, 100%));
+    }
+}
+/* --- *** класс для переворота кнопки-вектора *** --- */
+.header__rotate {
+    transform: rotate(180deg);
+}
+/**/
+
+
+
+
+.header--ul__SUB {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 12px;
+    height: 0;
+    background: linear-gradient(hsl(240, 15%, 17%), hsl(240, 15%, 17%)) 
+                50% 50%/calc(100% - 2px) calc(100% - 2px) no-repeat, 
+                linear-gradient(90deg, hsla(0, 0%, 100%, 0.3) 0, transparent);
+    
+    list-style-type: none;
+    transition: height 0.2s linear, margin-top 0.2s linear;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 50px;
+        left: -10px;
+    }
+}
+/* --- *** классы для выпадающих подменю:
+маленьких и большого *** --- */
+.header__subopen {
+    margin-top: 20px;
+    height: 47px;
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+        height: 44px;
+    }
+
+    @media (min-width: 950px) {
+        height: 46px;
+    }
+}
+.header__subopen2 {
+    margin-top: 20px;
+    height: 192px;
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+        height: 179px;
+    }
+
+    @media (min-width: 950px) {
+        height: 181px;
+    }
+}
+/**/
+
+
+
+
+.header--li__SUB {
+    padding: 12px 0;
+}
+
+
+
+.header--a__SUB {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    color: hsl(0, 0%, 85%);
+    white-space: nowrap;
+    text-decoration: none;
+
+    @media (min-width: 768px){
+        font-size: 15px;
+    }
+
+    @media (min-width: 950px) {
+        font-size: 16px;
+    }
+}
+@media (any-hover: hover) {
+    .header--a__SUB:hover {
+        color: hsl(0, 0%, 100%);
+    }
+    .header--a__SUB:active {
+        color: hsl(0, 0%, 90%);
+    }
+}
+@media (any-hover: none) {
+    .header--a__SUB:active {
+        color: hsl(0, 0%, 100%);
+    }
+}
+
+
+
+
+.header--a__BUTTON {
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding: 8px 24px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, hsl(194, 91%, 50%), hsl(300, 76%, 64%)) 1 / 1px;
+    transition: color 0.2s;
+    
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+.header--a__BUTTON::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, hsl(194, 91%, 50%), hsl(300, 76%, 64%));
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.header--a__BUTTON::after {
+    opacity: 0;
+    position: absolute;
+    content: "";
+    inset: -0.4vw;
+    background-image: linear-gradient(90deg, hsl(194, 91%, 50%), hsl(300, 76%, 64%));
+    filter: blur(12px);
+    z-index: -2;
+    transition: opacity 0.3s;
+}
+/* --- *** класс для кнопки "контакт" мобильного меню *** --- */
+.header__buttonmob {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    font-size: 21px;
+    text-align: center;
+    
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+/**/
+@media (any-hover: hover) {
+    .header--a__BUTTON:hover::before {
+        opacity: 1;
+    }
+    // .header--a__BUTTON:active {
+    //     border-image: linear-gradient(90deg, hsl(194, 91%, 45%), hsl(300, 76%, 59%)) 1 / 1px;
+    // }
+    // .header--a__BUTTON:active::before{
+    //     background: linear-gradient(90deg, hsl(194, 91%, 45%), hsl(300, 76%, 59%));
+    // }
+    .header--a__BUTTON:active::after {
+        opacity: 1;
+    }
+}
+@media (any-hover: none) {
+    .header--a__BUTTON:active::before {
+        opacity: 1;
+    }
+}
+
+
+
+
+.header--button__BURGER {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    height: 44px;
+    width: 44px;
+    background-color: transparent;
+    border-image: linear-gradient(90deg, hsl(194, 91%, 50%), hsl(300, 76%, 64%)) 1 / 1px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+
+
+
+/* --- *** стилизация svg кнопки-бургера *** --- */
+.header--line {
+    transform-box: fill-box;
+    transition: all 0.3s linear;
+}
+.header--line:first-of-type {
+    transform-origin: 86% 0%;
+}
+.header--line:last-of-type {
+    transform-origin: 30% 100%;
+}
+/**/
+
+
+
+
+/* --- *** классы для анимации кнопки-бургера *** --- */
+.line1 {
+    transform: rotate(-45deg) scale(0.8, 1) translate(-25%, 25%);
+}
+.line2 {
+    transform: translate(200%);
+}
+.line3 {
+    transform: rotate(45deg) scale(3.6, 1) translate(-77%, -77%);
+}
+/**/
+
+
+
+
+.body--picture__WAVES {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+
+
+
+.body--img__WAVES {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+}

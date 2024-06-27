@@ -1,0 +1,229 @@
+
+
+/* ---------- **********  MAILING  ********** ---------- */
+
+
+.in-mailing {
+    margin-top: 100px;
+    padding: 0 16px;
+
+    @media (min-width: 430px) {
+        padding: 0 25px;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 19.53vw;
+        padding: 0 40px;
+    }
+
+    @media (min-width: 1280px) {
+        margin: 250px auto 0;
+        width: 1280px;
+    }
+}
+
+
+
+
+.in-mailing--div__CONTAINER {
+    padding: 7.2vw 3.02vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, hsl(194, 91%, 50%), hsl(300, 76%, 64%));
+    border-radius: 4px;
+
+    @media (min-width: 430px) {
+        padding: 31px 13px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 2.97vw 5.78vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (min-width: 1280px) {
+        padding: 38px 74px;
+    }
+}
+
+
+
+
+.in-mailing--h3 {
+    font-weight: 600;
+    font-size: 6.51vw;
+    line-height: 1.2;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+
+    @media (min-width: 430px) {
+        font-size: 28px;
+    }
+
+    @media (min-width: 768px) {
+        width: 43vw;
+        font-size: 3.13vw;
+        line-height: 4.53vw;
+        text-align: left;
+    }
+
+    @media (min-width: 1280px) {
+        width: 540px;
+        font-size: 40px;
+        line-height: 58px;
+        text-align: left;
+    }
+}
+
+
+
+
+.in-mailing--form {
+    margin-top: 8px;
+    display: flex;
+
+    @media (min-width: 768px) {
+        width: 28.52vw;
+    }
+}
+
+
+
+
+.in-mailing--div__INPUT {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+
+
+
+.in-mailing--input {
+    padding: 3.49vw 3.26vw 3.26vw 11.63vw;
+    width: 100%;
+    font-weight: 400;
+    font-size: 3.72vw;
+    line-height: 6.51vw;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 7%);
+
+    @media (min-width: 430px) {
+        padding: 15px 14px 14px 50px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 1.43vw 1.33vw 1.33vw 4.76vw;
+        font-size: 1.52vw;
+        line-height: 2.67vw;
+    }
+
+    @media (min-width: 1050px) {
+        padding: 15px 14px 14px 50px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+
+
+
+.in-mailing--input::placeholder {
+    font-weight: 400;
+    font-size: 3.72vw;
+    line-height: 6.51vw;
+    color: hsl(0, 0%, 100%);
+
+    @media (min-width: 430px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.52vw;
+        line-height: 2.67vw;
+    }
+
+    @media (min-width: 1050px) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+
+
+
+.in-mailing--img__MAIL {
+    width: 5.58vw;
+    position: absolute;
+    top: 3.72vw;
+    left: 3.72vw;
+    
+    @media (min-width: 430px) {
+        width: 24px;
+        top: 16px;
+        left: 16px;
+    }
+
+    @media (min-width: 768px) {
+        width: 2.29vw;
+        top: 1.52vw;
+        left: 1.52vw;
+    }
+
+    @media (min-width: 1050px) {
+        width: 24px;
+        top: 16px;
+        left: 16px;
+    }
+}
+
+
+
+
+.in-mailing--button {
+    width: 12.56vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 21%);
+    cursor: pointer;
+
+    @media (min-width: 430px) {
+        width: 54px;
+    }
+
+    @media (min-width: 768px) {
+        width: 5.15vw;
+    }
+
+    @media (min-width: 1050px) {
+        width: 54px;
+    }
+}
+.in-mailing--button:active {
+    background-color: hsla(0, 0%, 100%, 26%);
+}
+@media (any-hover: hover) {
+    .in-mailing--button:hover {
+        background-color: hsla(0, 0%, 100%, 26%);
+    }
+    .in-mailing--button:active {
+        background-color: hsla(0, 0%, 100%, 31%);
+    }
+}
+
+
+
+
+.in-mailing--img__SEND {
+    width: 3.72vw;
+
+    @media (min-width: 430px) {
+        width: 16px;
+    }
+}

@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRNas - Homepage</title>
+</head>
+
+
+
+
+
+<body>
+
+    <!-- ---------- ********** HEADER ********** ---------- -->
+
+
+    <header class="header">
+        <nav class="header--nav">
+            <a href="index.html">
+                <img class="header--img__LOGO" src=<%=require("./images/header/he-logo.svg")%> alt="logo">
+            </a>
+
+            
+            <div class="header--div__BACK"></div>
+
+
+            <ul class="header--ul">
+                <li class="header--li">
+                    <a class="header--a__MENU" href="index.html">Home</a>
+                </li>
+
+                <li class="header--li">
+                    <a class="header--a__MENU" href="about-us.html">About us</a>
+                </li>
+
+                <li class="header--li">
+                    <div class="header--div">
+                        <a class="header--a__MENU" href="our-service.html">Service</a>
+                        <img class="header--img__VECT" src=<%=require("./images/header/he-vector.svg")%> alt="submenu-button">
+                    </div>
+                    <ul class="header--ul__SUB">
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="detail-service.html">Detail Service</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header--li">
+                    <div class="header--div">
+                        <a class="header--a__MENU" href="404-page.html">Page</a>
+                        <img class="header--img__VECT" src=<%=require("./images/header/he-vector.svg")%> alt="submenu-button">
+                    </div>
+                    <ul class="header--ul__SUB">
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="pricing-plan.html">Pricing Plan</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="our-team.html">Our Team</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="tems-and-conditions.html">Tems & Conditions</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header--li">
+                    <div class="header--div">
+                        <a class="header--a__MENU" href="blog.html">Blog</a>
+                        <img class="header--img__VECT" src=<%=require("./images/header/he-vector.svg")%> alt="submenu-button">
+                    </div>
+                    <ul class="header--ul__SUB">
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="detail-blog.html">Detail Blog</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header--li header__buttonmob">
+                    <a class="header--a__BUTTON header__buttonmob" href="contact-us.html">Contact us</a>
+                </li>
+            </ul>
+
+
+            <a class="header--a__BUTTON" href="contact-us.html">Contact us</a>
+
+
+            <button class="header--button__BURGER">
+                <svg class="header--svg" width="21px" height="21px" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line class="header--line" x1="5" y1="20" x2="95" y2="20" stroke="white" stroke-width="11" />
+                    <line class="header--line" x1="40" y1="50" x2="95" y2="50" stroke="white" stroke-width="11" />
+                    <line class="header--line" x1="75" y1="80" x2="95" y2="80" stroke="white" stroke-width="11" />
+                </svg>
+            </button>
+        </nav>
+        
+    </header>
+
+
+
+    <picture class="body--picture__WAVES">
+        <source type="image/webp" srcset="<%=require('./images/header/he-waves-big.webp')%>, <%=require('./images/header/he-waves-big2.webp')%> 2x" media="(min-width: 768px)">
+        <source type="image/webp" srcset="<%=require('./images/header/he-waves.webp')%>, <%=require('./images/header/he-waves2.webp')%> 2x">
+        <img class="body--img__WAVES" src=<%=require('./images/header/he-waves.png')%> alt="waves">
+    </picture>
+
+
+
+
+    <main>
+
+        <!-- ---------- ********** HERO ********** ---------- -->
+
+
+        <section class="in-hero">
+            <div class="in-hero--div__MEDIA">
+                <div class="in-hero--div__MEDIA1">
+                    <h1 class="in-hero--h1 TEMPLATE--h1">Immerse Yourself<br>
+                        in Virtual Reality</h1>
+                    
+                    <p class="in-hero--p">
+                        Experience Unforgettable Events in VR. 
+                        Bring your events to life like never before with our VR services
+                    </p>
+
+                    <a class="in-hero--a TEMPLATE--a__BTN1" href="blog.html">DISCOVER MORE</a>
+
+                    <div class="in-hero--div__CLIENTSVIDEO">
+                        <picture class="in-hero--picture__CLIENTS">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-hero-clients.webp')%>, <%=require('./images/index/in-hero-clients2.webp')%> 2x">
+                            <img class="in-hero--img__CLIENTS" src=<%=require("./images/index/in-hero-clients.png")%> alt="clients">
+                        </picture>
+                        <a class="in-hero--a__VIDEO" href="#">
+                            <picture class="in-hero--picture__VIDEO">
+                                <source type="image/webp" srcset="<%=require('./images/index/in-hero-video.webp')%>, <%=require('./images/index/in-hero-video2.webp')%> 2x">
+                                <img class="in-hero--img__VIDEO" src=<%=require("./images/index/in-hero-video.png")%> alt="video">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+
+                <picture class="in-hero--picture__HERO">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-hero-man.webp')%>, <%=require('./images/index/in-hero-man2.webp')%> 2x">
+                    <img class="in-hero--img__HERO" src=<%=require("./images/index/in-hero-man.png")%> alt="man with VR">
+                </picture>
+                
+            </div>
+
+
+
+
+            <div class="in-hero--div__DESCR">
+                <div class="in-hero--div__ELEM">
+                    <img class="in-hero--img__ELEM" src=<%=require("./images/index/in-hero-device.svg")%> alt="device">
+                    <h3 class="in-hero--h3">Expertise</h3>
+                    <p class="in-hero--p__TEXT">
+                        Our team consists of experienced VR developers, 
+                        designers, and technicians who have a passion for 
+                        VR and a commitment to delivering quality work 
+                        and give the best service
+                    </p>
+                </div>
+
+                <div class="in-hero--div__ELEM">
+                    <img class="in-hero--img__ELEM" src=<%=require("./images/index/in-hero-cube.svg")%> alt="device">
+                    <h3 class="in-hero--h3">Customization</h3>
+                    <p class="in-hero--p__TEXT">
+                        Every client is unique, and we believe every VR 
+                        experience should be too. We'll work with you to 
+                        create a customized solution that meets your 
+                        specific needs and goals
+                    </p>
+                </div>
+
+                <div class="in-hero--div__ELEM">
+                    <img class="in-hero--img__ELEM" src=<%=require("./images/index/in-hero-head.svg")%> alt="device">
+                    <h3 class="in-hero--h3">Service</h3>
+                    <p class="in-hero--p__TEXT">
+                        We believe in providing exceptional customer 
+                        service, from initial consultation to final delivery. 
+                        Our goal is to ensure you're satisfied with every 
+                        aspect of your VR experience.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <img class="in-hero--img__GRID" src=<%=require("./images/index/in-hero-grid.svg")%> alt="grid">
+
+
+
+
+            <picture class="in-hero--picture__LIGHT">
+                <source type="image/webp" srcset="<%=require('./images/index/in-hero-light.webp')%>, <%=require('./images/index/in-hero-light2.webp')%> 2x">
+                <img class="in-hero--img__LIGHT" src=<%=require("./images/index/in-hero-light.png")%> alt="light">
+            </picture>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** ABOUT ********** ---------- -->
+
+
+        <section class="in-about">
+            <div class="in-about--div__MEDIA">
+                <img class="in-about--img__BG" src=<%=require('./images/index/in-about-bg.svg')%> alt="background">
+                
+                <picture class="in-about--picture__LIGHT">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-about-light.webp')%>, <%=require('./images/index/in-about-light2.webp')%> 2x">
+                    <img class="in-about--img__LIGHT" src=<%=require("./images/index/in-about-light.png")%> alt="light">
+                </picture>
+
+                <picture class="in-about--picture__MAN">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-about-man-big.webp')%>, <%=require('./images/index/in-about-man-big2.webp')%> 2x" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-about-man.webp')%>, <%=require('./images/index/in-about-man2.webp')%> 2x">
+                    <img class="in-about--img__VIDEO" src=<%=require("./images/index/in-about-man.png")%> alt="video">
+                </picture>
+
+                <a class="in-about--a__VIDEO" href="#">
+                    <picture class="in-about--picture__VIDEO">
+                        <source type="image/webp" srcset="<%=require('./images/index/in-about-video-big.webp')%>, <%=require('./images/index/in-about-video-big2.webp')%> 2x" media="(min-width: 768px)">
+                        <source type="image/webp" srcset="<%=require('./images/index/in-about-video.webp')%>, <%=require('./images/index/in-about-video2.webp')%> 2x">
+                        <img class="in-about--img__VIDEO" src=<%=require("./images/index/in-about-video.png")%> alt="video">
+                    </picture>
+                </a>
+            </div>
+
+
+
+
+            <div class="in-about--div__TEXT">
+                <p class="in-about--p__CAPT TEMPLATE--p__CAPT">ABOUT US</p>
+
+                <h2 class="in-about--h2 TEMPLATE--h2">
+                    Bring your events to life like never before with our VR services.
+                </h2>
+
+                <p class="in-about--p__TEXT">
+                    VRNas is a leading provider of VR services for education, 
+                    entertainment, architecture, and events. Our mission is 
+                    to bring the power of virtual reality to everyone, allowing 
+                    them to explore new worlds, learn in new ways, and experience 
+                    events in a whole new light.
+                </p>
+
+                <div class="in-about--div__LIST">
+                    <div class="in-about--div__LI">
+                        <img class="in-about--img__CHECK" src=<%=require("./images/index/in-about-check.svg")%> alt="checkbox">
+                        <p class="in-about--p__LI">Cutting-Edge Technology</p>
+                    </div>
+                    <div class="in-about--div__LI">
+                        <img class="in-about--img__CHECK" src=<%=require("./images/index/in-about-check.svg")%> alt="checkbox">
+                        <p class="in-about--p__LI">Versatile Applications</p>
+                    </div>
+                    <div class="in-about--div__LI">
+                        <img class="in-about--img__CHECK" src=<%=require("./images/index/in-about-check.svg")%> alt="checkbox">
+                        <p class="in-about--p__LI">Affordable and Accessible</p>
+                    </div>
+                </div>
+
+                <a class="in-about--a__BTN TEMPLATE--a__BTN1" href="about-us.html">READ MORE</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** SERVICE ********** ---------- -->
+        
+
+        <picture class="in-service--picture__LIGHT">
+            <source type="image/webp" srcset="<%=require('./images/index/in-service-light.webp')%>, <%=require('./images/index/in-service-light2.webp')%> 2x">
+            <img class="in-service--img__LIGHT" src=<%=require('./images/index/in-service-light.png')%> alt="light">
+        </picture>
+
+
+
+        <section class="in-service">
+            <div class="in-service--div__HEAD">
+                <div class="in-service--div__HEADER">
+                    <p class="in-service--p__CAPT TEMPLATE--p__CAPT">OUR SERVICE</p>
+                    <h2 class="in-service--h2 TEMPLATE--h2">Our Service</h2>
+                </div>
+                <p class="in-service--p__HEAD">
+                    We use the latest VR hardware and software 
+                    to create high-quality VR experiences that 
+                    are accessible and affordable. Our goal is 
+                    to provide exceptional customer service and 
+                    support, and our team is always available 
+                    to answer any questions and address any 
+                    concerns you may have.
+                </p>
+            </div>
+
+
+
+            <div class="in-service--div__CONTENT">
+                <div class="in-service--div__COUPLE">
+                    <div class="in-service--div__ITEM">
+                        <img class="in-service--img__ITEM" src=<%=require('./images/index/in-service-1.svg')%> alt="software">
+                        <h3 class="in-service--h3">VR Development</h3>
+                        <p class="in-service--p__ITEM">
+                            From concept to creation, our team of VR 
+                            developers will bring your vision to life.
+                        </p>
+                        <div class="in-service--div__HIDDEN">
+                            <a class="in-service--a" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="in-service--div__ITEM">
+                        <img class="in-service--img__ITEM" src=<%=require('./images/index/in-service-2.svg')%> alt="video-console">
+                        <h3 class="in-service--h3">VR Games</h3>
+                        <p class="in-service--p__ITEM">
+                            We offer a wide selection of VR games that are 
+                            suitable for players of all ages and skill levels.
+                        </p>
+                        <div class="in-service--div__HIDDEN">
+                            <a class="in-service--a" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="in-service--div__COUPLE">
+                    <div class="in-service--div__ITEM">
+                        <img class="in-service--img__ITEM" src=<%=require('./images/index/in-service-3.svg')%> alt="lamp">
+                        <h3 class="in-service--h3">VR Design</h3>
+                        <p class="in-service--p__ITEM">
+                            Our talented VR designers will create immersive and engaging 
+                            environments that will captivate your audience.
+                        </p>
+                        <div class="in-service--div__HIDDEN">
+                            <a class="in-service--a" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="in-service--div__ITEM">
+                        <img class="in-service--img__ITEM" src=<%=require('./images/index/in-service-4.svg')%> alt="party">
+                        <h3 class="in-service--h3">VR Events</h3>
+                        <p class="in-service--p__ITEM">
+                            Make your next event unforgettable with our VR event services.
+                        </p>
+                        <div class="in-service--div__HIDDEN">
+                            <a class="in-service--a" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="in-service--div__COUPLE">
+                    <div class="in-service--div__ITEM">
+                        <img class="in-service--img__ITEM" src=<%=require('./images/index/in-service-5.svg')%> alt="rewiew">
+                        <h3 class="in-service--h3">VR Consulting</h3>
+                        <p class="in-service--p__ITEM">
+                            Our VR consultants will work with you to ensure that your 
+                            VR experience meets your goals and exceeds your expectations.
+                        </p>
+                        <div class="in-service--div__HIDDEN">
+                            <a class="in-service--a" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="in-service--div__ITEM">
+                        <img class="in-service--img__ITEM" src=<%=require('./images/index/in-service-6.svg')%> alt="theatre">
+                        <h3 class="in-service--h3">VR Entertainment</h3>
+                        <p class="in-service--p__ITEM">
+                            Create a VR escape room, or offer VR experiences at a theme park, 
+                            we have the expertise and experience to make it happen.
+                        </p>
+                        <div class="in-service--div__HIDDEN">
+                            <a class="in-service--a" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** CHOOSE ********** ---------- -->
+
+
+        <section class="choose">
+            <div class="in-choose--div__MEDIA">
+                <img class="in-choose--img__BG" src=<%=require("./images/index/in-choose-bg.svg")%> alt="background">
+
+                <picture class="in-choose--picture__MAN">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-choose-man-big.webp')%>, <%=require('./images/index/in-choose-man-big2.webp')%> 2x" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-choose-man.webp')%>, <%=require('./images/index/in-choose-man2.webp')%> 2x">
+                    <img class="in-choose--img__MAN" src=<%=require("./images/index/in-choose-man.png")%> alt="man with VR">
+                </picture>
+
+                <picture class="in-choose--picture__LIGHT">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-choose-light-big.webp')%>, <%=require('./images/index/in-choose-light-big2.webp')%> 2x">
+                    <img class="in-choose--img__LIGHT" src=<%=require("./images/index/in-choose-light-big.png")%> alt="light">
+                </picture>
+
+                <a class="in-choose--a__VIDEO" href="#">
+                    <picture class="in-choose--picture__VIDEO">
+                        <source type="image/webp" srcset="<%=require('./images/index/in-choose-video-big.webp')%>, <%=require('./images/index/in-choose-video-big2.webp')%> 2x" media="(min-width: 768px)">
+                        <source type="image/webp" srcset="<%=require('./images/index/in-choose-video.webp')%>, <%=require('./images/index/in-choose-video2.webp')%> 2x">
+                        <img class="in-choose--img__VIDEO" src=<%=require("./images/index/in-choose-video.png")%> alt="video">
+                    </picture>
+                </a>
+            </div>
+
+
+
+
+            <div class="in-choose--div__TEXT">
+                <p class="in-choose--p__CAPT TEMPLATE--p__CAPT">WHY CHOOSE US</p>
+
+
+                <h2 class="in-choose--h2 TEMPLATE--h2">
+                    Why Choose Us for Your VR Needs
+                </h2>
+
+
+                <div class="in-choose--div__LIST">
+                    <div class="in-choose--div__ITEM">
+                        <div class="in-choose--div__HEAD">
+                            <p class="in-choose--p__HEAD">
+                                Passionate and Experienced Team
+                            </p>
+                            <img class="in-choose--img__ARR" src=<%=require('./images/index/in-choose-arr.svg')%> alt="arrow">
+                        </div>
+                        <p class="in-choose--p__BODY">
+                            We are proud of our team of VR experts 
+                            who are passionate about VR and dedicated 
+                            to delivering the highest quality work. 
+                            Our team consists of experienced VR developers, 
+                            designers, and technicians who have a proven 
+                            track record of creating immersive and engaging 
+                            VR experiences.
+                        </p>
+                    </div>
+
+                    <div class="in-choose--div__ITEM">
+                        <div class="in-choose--div__HEAD">
+                            <p class="in-choose--p__HEAD">
+                                Customized Solutions
+                            </p>
+                            <img class="in-choose--img__ARR" src=<%=require('./images/index/in-choose-arr.svg')%> alt="arrow">
+                        </div>
+                        <p class="in-choose--p__BODY">
+                            We are proud of our team of VR experts 
+                            who are passionate about VR and dedicated 
+                            to delivering the highest quality work. 
+                            Our team consists of experienced VR developers, 
+                            designers, and technicians who have a proven 
+                            track record of creating immersive and engaging 
+                            VR experiences.
+                        </p>
+                    </div>
+
+                    <div class="in-choose--div__ITEM">
+                        <div class="in-choose--div__HEAD">
+                            <p class="in-choose--p__HEAD">
+                                Exceptional Customer Service
+                            </p>
+                            <img class="in-choose--img__ARR" src=<%=require('./images/index/in-choose-arr.svg')%> alt="arrow">
+                        </div>
+                        <p class="in-choose--p__BODY">
+                            We are proud of our team of VR experts 
+                            who are passionate about VR and dedicated 
+                            to delivering the highest quality work. 
+                            Our team consists of experienced VR developers, 
+                            designers, and technicians who have a proven 
+                            track record of creating immersive and engaging 
+                            VR experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** VIDEO ********** ---------- -->     
+        
+        
+        <section class="in-video">
+            <p class="in-video--p__CAPT TEMPLATE--p__CAPT">HOW TO GET STARTED</p>
+
+            <h2 class="in-video--h2 TEMPLATE--h2">
+                Bringing Your Virtual Reality
+                Dreams to Life
+            </h2>
+
+            <video class="in-video--video" width="580" controls poster=<%=require('./images/index/in-video-video.jpg')%>>
+                <source src=<%=require('./video/index/in-video-video.webm')%> type="video/webm">
+                <source src=<%=require('./video/index/in-video-video.mp4')%> type="video/mp4">
+                Ваш браузер не поддерживает встроенные видео.
+            </video>
+
+            <video class="in-video--video" width="580" controls poster=<%=require('./images/index/in-video-video-big.jpg')%>>
+                <source src=<%=require('./video/index/in-video-video.webm')%> type="video/webm">
+                <source src=<%=require('./video/index/in-video-video.mp4')%> type="video/mp4">
+                Ваш браузер не поддерживает встроенные видео.
+            </video>
+
+            <p class="in-video--p__VIDEOCAPT">
+                Video by
+                <a class="in-video--a__VIDEOCAPT" href="https://ru.freepik.com/free-video/young-woman-using-vr-headset-colorful-neon-light-background-1_164272#fromView=search&page=1&position=1&uuid=8e39223b-b6d6-4252-9b34-7b52b7b7465a">freepik</a>
+            </p>
+
+
+            <a class="in-video--a__BTN TEMPLATE--a__BTN1" href="pricing-plan.html">GET STARTED</a>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** TESTIMONIAL ********** ---------- -->
+
+
+        <section class="in-testimonial">
+            <div class="in-testimonial--div__HEAD">
+                <p class="in-testimonial--p__CAPT TEMPLATE--p__CAPT">
+                    TESTIMONIAL
+                </p>
+                <h2 class="in-testimonial--h2 TEMPLATE--h2">
+                    What Our Clients Are Saying
+                </h2>
+            </div>
+
+            
+
+            <div class="in-testimonial--div__BODY">
+                <div class="in-testimonial--div__CLIENT">
+                    <picture class="in-testimonial--picture">
+                        <source type="image/webp" srcset=<%=require('./images/index/in-testimonial-client-1.webp')%>>
+                        <img class="in-testiminial--img__CLIENT" src=<%=require("./images/index/in-testimonial-client-1.png")%> alt="client">
+                    </picture>
+                    <div class="in-testimonial--div__TEXT">
+                        <p class="in-testimonial--p__TEXT">
+                            The team was professional, responsive, 
+                            and a pleasure to work with. We highly 
+                            recommend VRNas for any VR needs.
+                        </p>
+                        <p class="in-testimonial--p__AUTHOR">
+                            Bayu Aji - VR Development
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="in-testimonial--div__CLIENT">
+                    <picture class="in-testimonial--picture">
+                        <source type="image/webp" srcset=<%=require('./images/index/in-testimonial-client-2.webp')%>>
+                        <img class="in-testiminial--img__CLIENT" src=<%=require("./images/index/in-testimonial-client-2.png")%> alt="client">
+                    </picture>
+                    <div class="in-testimonial--div__TEXT">
+                        <p class="in-testimonial--p__TEXT">
+                            The team was professional, responsive, 
+                            and a pleasure to work with. We highly 
+                            recommend VRNas for any VR needs.
+                        </p>
+                        <p class="in-testimonial--p__AUTHOR">
+                            Aldo Boy - 3D Designer
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="in-testimonial--div__CLIENT">
+                    <picture class="in-testimonial--picture">
+                        <source type="image/webp" srcset=<%=require('./images/index/in-testimonial-client-3.webp')%>>
+                        <img class="in-testiminial--img__CLIENT" src=<%=require("./images/index/in-testimonial-client-3.png")%> alt="client">
+                    </picture>
+                    <div class="in-testimonial--div__TEXT">
+                        <p class="in-testimonial--p__TEXT">
+                            The team was professional, responsive, 
+                            and a pleasure to work with. We highly 
+                            recommend VRNas for any VR needs.
+                        </p>
+                        <p class="in-testimonial--p__AUTHOR">
+                            Aril Laso - UI / UX Designer
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="in-testimonial--div__CLIENT">
+                    <picture class="in-testimonial--picture">
+                        <source type="image/webp" srcset=<%=require('./images/index/in-testimonial-client-4.webp')%>>
+                        <img class="in-testiminial--img__CLIENT" src=<%=require("./images/index/in-testimonial-client-4.png")%> alt="client">
+                    </picture>
+                    <div class="in-testimonial--div__TEXT">
+                        <p class="in-testimonial--p__TEXT">
+                            The team was professional, responsive, 
+                            and a pleasure to work with. We highly 
+                            recommend VRNas for any VR needs.
+                        </p>
+                        <p class="in-testimonial--p__AUTHOR">
+                            Agung Brandon - VR Artist
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="in-testimonial--div__CLIENT">
+                    <picture class="in-testimonial--picture">
+                        <source type="image/webp" srcset=<%=require('./images/index/in-testimonial-client-5.webp')%>>
+                        <img class="in-testiminial--img__CLIENT" src=<%=require("./images/index/in-testimonial-client-5.png")%> alt="client">
+                    </picture>
+                    <div class="in-testimonial--div__TEXT">
+                        <p class="in-testimonial--p__TEXT">
+                            The team was professional, responsive, 
+                            and a pleasure to work with. We highly 
+                            recommend VRNas for any VR needs.
+                        </p>
+                        <p class="in-testimonial--p__AUTHOR">
+                            Beni Barak - 3D Artist
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="in-testimonial--div__CLIENT">
+                    <picture class="in-testimonial--picture">
+                        <source type="image/webp" srcset=<%=require('./images/index/in-testimonial-client-6.webp')%>>
+                        <img class="in-testiminial--img__CLIENT" src=<%=require("./images/index/in-testimonial-client-6.png")%> alt="client">
+                    </picture>
+                    <div class="in-testimonial--div__TEXT">
+                        <p class="in-testimonial--p__TEXT">
+                            The team was professional, responsive, 
+                            and a pleasure to work with. We highly 
+                            recommend VRNas for any VR needs.
+                        </p>
+                        <p class="in-testimonial--p__AUTHOR">
+                            Bondan Prabowo - CEO
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** PRICING ********** ---------- -->
+
+
+        <section class="in-pricing">
+            <p class="in-pricing--p__CAPT TEMPLATE--p__CAPT">
+                OUR PRICING
+            </p>
+            <h2 class="in-pricing--h2 TEMPLATE--h2">
+                Affordable VR Services for Everyone
+            </h2>
+            <p class="in-pricing--p__HEAD">
+                At VRNas, we believe that everyone should have access to the benefits of VR. 
+                That's why we offer a range of pricing options to meet the needs of any budget.
+            </p>
+
+
+
+            <div class="in-pricing--div__BODY">
+                <div class="in-pricing--div__CONTENT">
+                    <div class="in-pricing--div__MEDIA">
+                        <img class="in-pricing--img" src=<%=require("./images/index/in-pricing-cloud.svg")%> alt="light">
+                        <div class="in-pricing--div__TEXT">
+                            <h3 class="in-pricing--h3">
+                                Customizable Packages
+                            </h3>
+                            <p class="in-pricing--p__TEXT">
+                                We understand that each project is unique, 
+                                so we offer customizable packages to ensure 
+                                that you get the services you need at a price 
+                                that works for you. Our team will work with you 
+                                to create a package that meets your specific goals 
+                                and budget.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="in-pricing--div__MEDIA">
+                        <img class="in-pricing--img" src=<%=require("./images/index/in-pricing-cloud.svg")%> alt="light">
+                        <div class="in-pricing--div__TEXT">
+                            <h3 class="in-pricing--h3">
+                                Flexible Payment Options
+                            </h3>
+                            <p class="in-pricing--p__TEXT">
+                                We offer flexible payment options to make it easy 
+                                for you to get started with our services. We accept 
+                                various payment methods, including credit cards, 
+                                bank transfers, and PayPal, and we can also work 
+                                with you to create a payment plan that suits your needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="in-pricing--div__MEDIA">
+                        <img class="in-pricing--img" src=<%=require("./images/index/in-pricing-cloud.svg")%> alt="cloud">
+                        <div class="in-pricing--div__TEXT">
+                            <h3 class="in-pricing--h3">
+                                Satisfaction Guarantee
+                            </h3>
+                            <p class="in-pricing--p__TEXT">
+                                We stand behind our services and are committed to ensuring 
+                                that you are completely satisfied with the final product. 
+                                If for any reason you are not happy with our services, 
+                                we will work with you to make it right or provide a full refund.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="in-pricing--div__LINE"></div>
+
+                <div class="in-pricing--div__EMPTY"></div>
+
+                <img class="in-pricing--img__LIGHT" src=<%=require("./images/index/in-pricing-light.svg")%> alt="light">
+            
+                <div class="in-pricing--div__START">
+                    <p class="in-pricing--p__START">Start from</p>
+                    <p class="in-pricing--p__PRICE">$99</p>
+                    <a class="in-pricing--a__BTN TEMPLATE--a__BTN1" href="pricing-plan.html">GET STARTED</a>
+                    <p class="in-pricing--p__GUARANTEE">30 Days Moneyback Guarantee</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** PARTNERS ********** ---------- -->
+
+
+        <section class="in-partners">
+            <p class="in-partners--p__CAPT TEMPLATE--p__CAPT">
+                OUR TRUSTED PARTNERS
+            </p>
+
+
+
+            <h2 class="in-partners--h2 TEMPLATE--h2">
+                Discover the Companies We Work With
+            </h2>
+
+
+
+            <div class="in-partners--div__BODY">
+                <picture class="in-partners--picture__MAIN">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-partners-main-big.webp')%>, <%=require('./images/index/in-partners-main-big2.webp')%> 2x" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="<%=require('./images/index/in-partners-main.webp')%>, <%=require('./images/index/in-partners-main2.webp')%> 2x">
+                    <img class="in-partners--img__MAIN" src=<%=require("./images/index/in-partners-main-big.png")%> alt="man with VR goggles">
+                </picture>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-1.svg")%> alt=logo1>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-2.svg")%> alt=logo1>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-3.svg")%> alt=logo1>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-4.svg")%> alt=logo1>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-5.svg")%> alt=logo1>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-6.svg")%> alt=logo1>
+
+                <img class="in-partners--img__LOGO" src=<%=require("./images/index/in-partners-logo-7.svg")%> alt=logo1>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** ARTICLES ********** ---------- -->
+
+
+        <section class="in-articles">
+            <picture class="in-articles--picture__LIGHT">
+                <source type="image/webp" srcset=<%=require('./images/index/in-articles-light.webp')%>>
+                <img class="in-articles--img__LIGHT" src=<%=require("./images/index/in-articles-light.png")%> alt="light">
+            </picture>
+
+
+
+            <img class="in-articles--img__GRID" src=<%=require("./images/index/in-articles-grid.svg")%> alt="grid">
+
+
+
+            <p class="in-articles--p__CAPT TEMPLATE--p__CAPT">
+                OUR ARTICLES
+            </p>
+            <h2 class="in-articles--h2 TEMPLATE--h2">
+                Stay Up-to-Date with Our VR Insights
+            </h2>
+
+
+
+            <h3 class="in-articles--h3">
+                Popular Article
+            </h3>
+
+            <div class="in-articles--div__SWIPER swiper">
+                <div class="in-articles--div__WRAPPER swiper-wrapper">
+                    <div class="in-articles--div__SLIDE swiper-slide">
+                        <picture class="in-articles--picture">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-1slide-big.webp')%>, <%=require('./images/index/in-articles-1slide-big2.webp')%> 2x" media="(min-width: 768px)">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-1slide.webp')%>, <%=require('./images/index/in-articles-1slide2.webp')%> 2x">
+                            <img class="in-articles--img__SLIDE" src=<%=require("./images/index/in-articles-1slide-big.jpg")%> alt="man with VR">
+                        </picture>
+                        <div class="in-articles--div__LAYER"></div>
+                        <a class="in-articles--a__DESCR" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="in-articles--div__SLIDE swiper-slide">
+                        <picture class="in-articles--picture">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-3slide-big.webp')%>, <%=require('./images/index/in-articles-3slide-big2.webp')%> 2x" media="(min-width: 768px)">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-3slide.webp')%>, <%=require('./images/index/in-articles-3slide2.webp')%> 2x">
+                            <img class="in-articles--img__SLIDE" src=<%=require("./images/index/in-articles-3slide-big.jpg")%> alt="a hand reaching for VR">
+                        </picture>
+                        <div class="in-articles--div__LAYER"></div>
+                        <a class="in-articles--a__DESCR" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Entertainment
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Making Events Memorable: The Power of VR for Corporate and Special Occasions
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="in-articles--div__SLIDE swiper-slide">
+                        <picture class="in-articles--picture">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-6slide-big.webp')%>, <%=require('./images/index/in-articles-6slide-big2.webp')%> 2x" media="(min-width: 768px)">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-6slide.webp')%>, <%=require('./images/index/in-articles-6slide2.webp')%> 2x">
+                            <img class="in-articles--img__SLIDE" src=<%=require("./images/index/in-articles-6slide-big.jpg")%> alt="the symbol of infinity">
+                        </picture>
+                        <div class="in-articles--div__LAYER"></div>
+                        <a class="in-articles--a__DESCR" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="in-articles--div__SLIDE swiper-slide">
+                        <picture class="in-articles--picture__SLIDE">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-8slide-big.webp')%>, <%=require('./images/index/in-articles-8slide-big2.webp')%> 2x" media="(min-width: 768px)">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-8slide.webp')%>, <%=require('./images/index/in-articles-8slide2.webp')%> 2x">
+                            <img class="in-articles--img__SLIDE" src=<%=require("./images/index/in-articles-8slide-big.jpg")%> alt="a person with VR clicks on a hologram">
+                        </picture>
+                        <div class="in-articles--div__LAYER"></div>
+                        <a class="in-articles--a__DESCR" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                    </div>
+                </div>
+    
+                <button class="in-articles--button__NEXT">
+                    <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                </button>
+    
+                <div class="in-articles--div__PAGINATION swiper-pagination"></div>
+            </div>
+
+
+
+            <div class="in-articles--div__RA">
+                <h3 class="in-articles--h3">
+                    Recent Article
+                </h3>
+
+                <div class="in-articles--div__CONTENT">
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-1slide.webp')%>, <%=require('./images/index/in-articles-1slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-1slide-big.jpg")%> alt="man with VR">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-2slide.webp')%>, <%=require('./images/index/in-articles-2slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-2slide-big.jpg")%> alt="VR device">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-3slide.webp')%>, <%=require('./images/index/in-articles-3slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-3slide-big.jpg")%> alt="a hand reaching for VR">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Entertainment
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Making Events Memorable: The Power of VR for Corporate and Special Occasions
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-4slide.webp')%>, <%=require('./images/index/in-articles-4slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-4slide-big.jpg")%> alt="Two people are playing with VR">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Event
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Exploring New Worlds: The Benefits of VR Travel
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-5slide.webp')%>, <%=require('./images/index/in-articles-5slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-5slide-big.jpg")%> alt="Man with VR">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Architecture
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Bringing Designs to Life: How VR is Changing Architecture
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-6slide.webp')%>, <%=require('./images/index/in-articles-6slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-6slide-big.jpg")%> alt="the symbol of infinity">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-7slide.webp')%>, <%=require('./images/index/in-articles-7slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-7slide-big.jpg")%> alt="two children with VR">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-8slide.webp')%>, <%=require('./images/index/in-articles-8slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-8slide-big.jpg")%> alt="a person with VR clicks on a hologram">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Games
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                Entertainment Goes Virtual: The Rise of VR Gaming
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                    <div class="in-articles--div__PART">
+                        <picture class="in-articles--picture__RA">
+                            <source type="image/webp" srcset="<%=require('./images/index/in-articles-9slide.webp')%>, <%=require('./images/index/in-articles-9slide2.webp')%> 2x">
+                            <img class="in-articles--img__RA" src=<%=require("./images/index/in-articles-9slide-big.jpg")%> alt="the VR device">
+                        </picture>
+                        <a class="in-articles--a__RA" href="#">
+                            <p class="in-articles--p__TITLE">
+                                VR Education
+                            </p>
+                            <p class="in-articles--p__TEXT">
+                                The Future of Education: How VR is Revolutionizing the Classroom
+                            </p>
+                        </a>
+                        <a class="in-articles--a__TRANSIT" href="#">
+                            <img class="in-articles--img__NEXT" src=<%=require("./images/index/in-articles-next.svg")%> alt="next">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <a class="in-articles--a__ALL" href="blog.html">
+                SEE ALL
+            </a>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** MAILING ********** ---------- -->
+
+
+        <section class="in-mailing">
+            <div class="in-mailing--div__CONTAINER">
+                <h3 class="in-mailing--h3">
+                    Subscribe to our newsletter for latest updates
+                </h3>
+    
+
+                
+                <form class="in-mailing--form" action="#" method="post">
+                    <div class="in-mailing--div__INPUT">
+                        <input class="in-mailing--input" type="mail" name="mail" placeholder="Enter your email address" required>
+                        <img class="in-mailing--img__MAIL" src=<%=require("./images/index/in-mailing-mail.svg")%> alt="mail">
+                    </div>
+                    
+                    <button class="in-mailing--button" type="submit">
+                        <img class="in-mailing--img__SEND" src=<%=require("./images/index/in-mailing-send.svg")%> alt="send">
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <!-- ---------- ********** FOOTER ********** ---------- -->
+
+
+    <footer class="footer">
+        <picture class="footer--picture__WAVES">
+            <source type="image/webp" srcset="<%=require('./images/footer/fo-waves-big.webp')%>, <%=require('./images/footer/fo-waves-big2.webp')%> 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="<%=require('./images/footer/fo-waves.webp')%>, <%=require('./images/footer/fo-waves2.webp')%> 2x">
+            <img class="footer--img__WAVES" src=<%=require('./images/footer/fo-waves.png')%> alt="waves">
+        </picture>
+
+
+
+        <div class="footer--div__CONTAINER">
+            <div class="footer--div__LINKS">
+                <div class="footer--div__MAIN">
+                    <a href="index.html">
+                        <img class="footer--img__LOGO" src=<%=require("./images/header/he-logo.svg")%> alt="logo">
+                    </a>
+    
+                    <div class="footer--div__SOCIAL">
+                        <a class="footer--a__SOCIAL" href="https://vk.com">
+                            <img class="footer--img__SOCIAL" src=<%=require("./images/footer/fo-vk.png")%> alt="logo">
+                        </a>
+                        <a class="footer--a__SOCIAL" href="https://ok.ru">
+                            <img class="footer--img__SOCIAL" src=<%=require("./images/footer/fo-ok.png")%> alt="logo">
+                        </a>
+                        <a class="footer--a__SOCIAL" href="https://t.me">
+                            <img class="footer--img__SOCIAL" src=<%=require("./images/footer/fo-telegram.png")%> alt="logo">
+                        </a>
+                        <a class="footer--a__SOCIAL" href="https://dzen.ru">
+                            <img class="footer--img__SOCIAL" src=<%=require("./images/footer/fo-zen.png")%> alt="logo">
+                        </a>
+                    </div>
+                </div>
+    
+    
+                <div class="footer--div__NAV">
+                    <div class="footer--div__COLUMN">
+                        <h4 class="footer--h4">
+                            Quicklinks
+                        </h4>
+                        <a class="footer--a__NAV" href="index.html">Home</a>
+                        <a class="footer--a__NAV" href="pricing-plan.html">Pricing Plan</a>
+                        <a class="footer--a__NAV" href="our-service.html">Service</a>
+                        <a class="footer--a__NAV" href="blog.html">Blog</a>
+                        <a class="footer--a__NAV" href="our-team.html">Our Team</a>
+                    </div>
+                    <div class="footer--div__COLUMN">
+                        <h4 class="footer--h4">
+                            Support
+                        </h4>
+                        <a class="footer--a__NAV" href="about-us.html">About Us</a>
+                        <a class="footer--a__NAV" href="contact-us.html">Contact Us</a>
+                        <a class="footer--a__NAV" href="faq.html">FAQ</a>
+                        <a class="footer--a__NAV" href="tems-and-conditions.html">Teams & Conditions</a>
+                        <a class="footer--a__NAV" href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    <div class="footer--div__COLUMN">
+                        <h4 class="footer--h4">
+                            Nead Help?
+                        </h4>
+                        <a class="footer--a__NAV" href="#">
+                            <img class="footer--img__NAV" src=<%=require("./images/footer/fo-geo.svg")%> alt="geo location">
+                            Tanjung Sari Street no.48, Pontianak City
+                        </a>
+                        <a class="footer--a__NAV" href="mailto:Support@VRNas.com">
+                            <img class="footer--img__NAV" src=<%=require("./images/footer/fo-mail.svg")%> alt="mail">
+                            Support@VRNas.com
+                        </a>
+                        <a class="footer--a__NAV" href="tel:+1234567890">
+                            <img class="footer--img__NAV" src=<%=require("./images/footer/fo-tel.svg")%> alt="tel">
+                            +123 456 7890
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="footer--div__LINE"></div>
+    
+    
+    
+            <p class="footer--p__RIGHTS">
+                © Copyright 2023, All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
