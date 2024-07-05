@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRNas - Detail Service</title>
+</head>
+
+
+
+
+
+<body>
+    
+    <!-- ---------- ********** HEADER ********** ---------- -->
+
+
+    <header class="header">
+        <nav class="header--nav">
+            <a href="index.html">
+                <img class="header--img__LOGO" src=<%=require("./images/header/he-logo.svg")%> alt="logo">
+            </a>
+
+            
+            <div class="header--div__BACK"></div>
+
+
+            <ul class="header--ul">
+                <li class="header--li">
+                    <a class="header--a__MENU" href="index.html">Home</a>
+                </li>
+
+                <li class="header--li">
+                    <a class="header--a__MENU" href="about-us.html">About us</a>
+                </li>
+
+                <li class="header--li">
+                    <div class="header--div">
+                        <a class="header--a__MENU" href="our-service.html">Service</a>
+                        <img class="header--img__VECT" src=<%=require("./images/header/he-vector.svg")%> alt="submenu-button">
+                    </div>
+                    <ul class="header--ul__SUB">
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="detail-service.html">Detail Service</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header--li">
+                    <div class="header--div">
+                        <a class="header--a__MENU" href="404-page.html">Page</a>
+                        <img class="header--img__VECT" src=<%=require("./images/header/he-vector.svg")%> alt="submenu-button">
+                    </div>
+                    <ul class="header--ul__SUB">
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="pricing-plan.html">Pricing Plan</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="our-team.html">Our Team</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="tems-and-conditions.html">Tems & Conditions</a>
+                        </li>
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header--li">
+                    <div class="header--div">
+                        <a class="header--a__MENU" href="blog.html">Blog</a>
+                        <img class="header--img__VECT" src=<%=require("./images/header/he-vector.svg")%> alt="submenu-button">
+                    </div>
+                    <ul class="header--ul__SUB">
+                        <li class="header--li__SUB">
+                            <a class="header--a__SUB" href="detail-blog.html">Detail Blog</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header--li header__buttonmob">
+                    <a class="header--a__BUTTON header__buttonmob" href="contact-us.html">Contact us</a>
+                </li>
+            </ul>
+
+
+            <a class="header--a__BUTTON" href="contact-us.html">Contact us</a>
+
+
+            <button class="header--button__BURGER">
+                <svg class="header--svg" width="21px" height="21px" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line class="header--line" x1="5" y1="20" x2="95" y2="20" stroke="white" stroke-width="11" />
+                    <line class="header--line" x1="40" y1="50" x2="95" y2="50" stroke="white" stroke-width="11" />
+                    <line class="header--line" x1="75" y1="80" x2="95" y2="80" stroke="white" stroke-width="11" />
+                </svg>
+            </button>
+        </nav>
+        
+    </header>
+    <picture class="body--picture__WAVES">
+        <source type="image/webp" srcset="<%=require('./images/header/he-waves-big.webp')%>, <%=require('./images/header/he-waves-big2.webp')%> 2x" media="(min-width: 768px)">
+        <source type="image/webp" srcset="<%=require('./images/header/he-waves.webp')%>, <%=require('./images/header/he-waves2.webp')%> 2x">
+        <img class="body--img__WAVES" src=<%=require('./images/header/he-waves.png')%> alt="waves">
+    </picture>
+    
+</body>
+</html>

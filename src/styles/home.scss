@@ -924,7 +924,21 @@
     line-height: 1.2;
     color: hsl(0, 0%, 100%);
 
+    @media (min-width: 470px) {
+        font-size: 32px;
+    }
+
     @media (min-width: 768px) {
+        font-size: 3.24vw;
+        line-height: 4.02vw;
+    }
+
+    @media (min-width: 1020px) {
+        font-size: 33px;
+        line-height: 41px;
+    }
+
+    @media (min-width: 1280px) {
         font-size: 48px;
         line-height: 58px;
     }
@@ -1140,7 +1154,7 @@
 /* ---------- **********  CHOOSE  ********** ---------- */
 
 
-.choose {
+.in-choose {
     margin-top: 200px;
     padding: 0 16px;
     display: flex;
